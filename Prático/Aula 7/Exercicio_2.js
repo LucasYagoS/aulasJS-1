@@ -7,7 +7,7 @@ let vetNum = []
 let soma = 0
 let media
 
-for(i = 0 ; i < 10 ; i++){
+for(i = 0; i < 10 ; i++){
     io.write("Escreva o preço de um produto:")
     vetNum[i] = io.readFloat()
     soma += vetNum[i]
