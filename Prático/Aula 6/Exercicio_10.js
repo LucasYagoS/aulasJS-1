@@ -1,7 +1,6 @@
 let io = require("../../io")
 
 var num
-var res
 var div = 0
 
 io.write("Digite um número natural:")
