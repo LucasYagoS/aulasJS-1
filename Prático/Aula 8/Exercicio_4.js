@@ -12,7 +12,6 @@ let y = x
 function power(x , z){
     for(i = 1 ; i < z ; i++){
         x *= y
-
     }
     return x
 }
