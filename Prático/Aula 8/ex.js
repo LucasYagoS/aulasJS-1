@@ -1,15 +1,17 @@
-let io = require("../../io")
+let io = require("../../io");
 
-function potencia(x, z) {
-  let pot = 1
-  for (let i = 1; i <= z; i++) {
-    pot = pot * x
+
+let valor
+io.write("Digite o numero");
+valor = io.readFloat();
+function funPar(valor) {
+  if (valor % 2 === 0) {
+    return true;
+  } else {
+    return false;
   }
-  return pot
 }
 
-io.write("Digite o valor de X: ")
-x = io.readInt()
-io.write("Digite o valor de Z: ")
-z = io.readInt()
-io.write("O valor de X elevado a Z é: " + potencia(x, z))
+
+
+io.write(funPar(valor));

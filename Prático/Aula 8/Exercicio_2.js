@@ -14,8 +14,10 @@ function type(age){
         i = "Juvenil A"
     } else if (age > 13 && age < 18){
         i = "Juvenil B"
-    } else {
+    } else if (age > 17) {
         i = "Adulto"
+    } else {
+        i = "Essa pessoa não é qualificada"
     }
     return i
 }

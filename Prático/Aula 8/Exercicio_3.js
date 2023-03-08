@@ -8,12 +8,15 @@ num = io.readInt()
 
 function odd_even(num){
     if (num % 2 === 0){
-        return "Esse numero é par"
-    } else {
-        return "Esse numero é impar"
+        return true
+    } else { 
+        return false
     }
 }
 
 let res = odd_even(num)
-
-io.write(res)
+if(res === true){
+    io.write("Este numero é par")
+} else {
+    io.write("Esse numero é impar")
+}
