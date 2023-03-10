@@ -9,7 +9,7 @@ for (let i = 0; i < 1000; i++) {
 
 // Ordenando os números do mais sorteado ao menos sorteado
 numerosSorteados.sort(function(a, b) {
-  return numerosSorteados.filter(x => x === b).length - numerosSorteados.filter(x => x === a).length;
+  return numerosSorteados.filter((x) => x === b).length - numerosSorteados.filter((x) => x === a).length;
 });
 
 // Imprimindo os números sorteados em ordem
