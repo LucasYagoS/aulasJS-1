@@ -8,9 +8,6 @@ for (i = 0; i < 10; i++) {
     nums[i] = io.readInt()
 }
 for (y = 0; y < 10; y++) {
-
-
-
     for (i = 0; i < 10; i++) {
 
         if (nums[i] > nums[i + 1]) {
