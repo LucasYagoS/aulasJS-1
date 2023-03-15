@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #2b2b2a;
 }
 
 .titulo{
     font-size: 24px;
     margin-bottom: 20px;
+}
+body.Dark-mode {
+    background-color: black;
+    color: #fff
 }
 
 .secao{
@@ -24,6 +27,7 @@
     font-weight: 400;
 }
 
-.dark{
-    color: white;
+body { 
+    color: #2b2b2a;
 }
+

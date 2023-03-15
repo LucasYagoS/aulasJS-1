@@ -18,29 +18,13 @@
         p3.className = "p3"
     }
 
-    function siteTheme(){
-        const butao = document.getElementById("corpo")
-        const modoClaro = document. getElementById("b")
-        
-        if (butao.style.backgroundColor == "white"){
-            const fontColor = document.getElementById("title").style.color = "white"
-            const fontColor2 = document.getElementById("firstParagraph").style.color = "white"
-            const fontColor3 = document.getElementById("secondParagraph").style.color = "white"
-            const fontColor4 = document.getElementById("thirdParagraph").style.color = "white"
-            butao.style.backgroundColor = "black"
-            
-            modoClaro.innerText = "Modo Claro"
-
-        } else {
-            butao.style.backgroundColor = "white"
-            const fontColor = document.getElementById("title").style.color = "black"
-            const fontColor2 = document.getElementById("firstParagraph").style.color = "black"
-            const fontColor3 = document.getElementById("secondParagraph").style.color = "black"
-            const fontColor4 = document.getElementById("thirdParagraph").style.color = "black"
-            modoClaro.innerText = "Modo Escuro"
+    function siteTheme() {
+          var body = document.querySelector("body");
+          body.classList.toggle("Dark-mode");
         }
-        
-    }
+
+
+    
 </script>
 
 <body onload="loaded()" id="corpo">
