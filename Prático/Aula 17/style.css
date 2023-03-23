@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+    
+}
+
+body{
+    background-color: rgba(156, 8, 8, 0.852);
+}
+
+.box{
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.superior {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.inferior {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+#temp-div{
+    width: 33.3%;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-bottom-left-radius: 25px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+#inner-div{
+    width: 33.3%;
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#date-div {
+    width: 33.3%;
+    background-color: #20df99c1;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+#weather-condition{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1;
+}
+
+#weather-icon{
+    width: 40%;
+}
+
+#txtLocal{
+    margin-bottom: 25px;
+    
+    width: 35%;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+
+}
+
+#pesquisar{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#puta{
+    justify-content: center;
+    width: 100%;
+    display: inline-flex;
+}
