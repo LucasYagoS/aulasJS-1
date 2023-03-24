@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+    
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6950A1;
+    padding: 1.3rem;
+}
+
+#modal {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    height: 38rem;
+    width: 40rem;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+    padding: 35px;
+}
+#modal>form>h1{
+    margin-left: 2.5%;
+    margin-top: 4%;
+}
+
+
+
+#modal>div,div,div,div{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35rem;
+    margin-top: 2rem;
+}
+
+input{
+    width: 36rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+}
+
+textarea{
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    resize: none;
+}

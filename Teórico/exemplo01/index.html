@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Json Server</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="https://cdn.discordapp.com/attachments/1078832234708078665/1088607306780000277/image.png" alt="">
+    <h1>League of Legends</h1>
+    <button onclick="addPost()">Incluir Post</button>
+  </header>
+
+
+  <div id="modal">
+
+    <form action="submit">
+      <h1>Novo Post</h1>
+      <div>
+        Titulo
+        <input type="text" id="title">
+      </div>
+      <div>
+        Autor(a)
+        <input type="text" id="autor">
+      </div>
+      <div>
+        Imagem de Destaque
+        <input type="text" id="image">
+      </div>
+      <div>
+        Texto
+        <textarea name="texto" id="txt" cols="76" rows="10"></textarea>
+      </div>
+      <input onclick="addPost()" type="button" value="Salvar" id="save">
+    </form>
+    <div>
+    </div>
+  </div>
+  <div id="news">
+
+  </div>
+
+</body>
+
+</html>
