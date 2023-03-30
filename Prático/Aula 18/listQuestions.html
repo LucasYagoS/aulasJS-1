@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/f04378cf91.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="loadQuestions()">
+<body onload="loadQuestions()" class="h-100">
     <header>
         <!--Nav-->
         <div class="container-fluid d-flex justify-content-between p-3 align-items-center"
@@ -26,7 +26,7 @@
             <ul class="nav nav-underline d-flex justify-content-around gap-5" style="text-decoration: none;">
 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" style="color: white; font-weight: 700;">Fazer o
+                    <a class="nav-link" aria-current="page" href="quiz.html" style="color: white; font-weight: 700;">Fazer o
                         Quiz</a>
                 </li>
                 <li class="nav-item">
@@ -39,13 +39,19 @@
                 </li>
             </ul>
         </div>
-        <main>
+    </header>
+    <main style="z-index: 1;" class="p-5">
 
-            <div id="modal" style="display: none;">
-                <div class="d-flex h-25 justify-content-center">
-                    <!--CARD-->
-                    <div class="card w-75 m-5 d-flex p-5 fw-bolder">
-                        <!-- Titulo-->
+        <div class="container" id="listQuestions">
+
+        </div>
+
+        <div id="modal" class="modal" style="display: none;">
+            <div class="modal-dialog-centered m-5 d-flex h-25 justify-content-center">
+                <!--CARD-->
+                <div id="modal-content" class="modal-content card w-75 m-5 d-flex p-3 fw-bolder">
+                    <!-- Titulo-->
+                    <div class="m-3">
                         <div class="card-body ms-5 me-5">
                             <label for="question"> Pergunta</label>
                             <!--Input de texto-->
@@ -132,17 +138,18 @@
 
                         </div>
                         <button onclick="saveQuestion(currentId)" type="button" class="btn mt-4"
-                            style="max-width: 20%; margin-left: 50%; transform: translate(-50%); background-color: #6950A1; color: white; font-weight: 700; border-radius: 70px;">Atualizar Questão</button>
-                            <button onclick="closeModal()" type="button" class="btn mt-4"
+                            style="max-width: 20%; margin-left: 50%; transform: translate(-50%); background-color: #6950A1; color: white; font-weight: 700; border-radius: 70px;">Atualizar
+                            Questão</button>
+                        <button onclick="closeModal()" type="button" class="btn mt-4"
                             style="max-width: 20%; margin-left: 50%; transform: translate(-50%); background-color: #6950A1; color: white; font-weight: 700; border-radius: 70px;">Fechar</button>
                     </div>
                 </div>
-
-
             </div>
 
-            <div class="container" id="listQuestions">
-                
-            </div>
-        </main>
-    </header>
+
+        </div>
+    </main>
+
+
+
+</body>
